@@ -1,0 +1,3 @@
+# Wander With Ream — allow all crawlers.
+User-agent: *
+Allow: /
