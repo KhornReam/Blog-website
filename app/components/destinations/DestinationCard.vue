@@ -18,11 +18,10 @@ defineProps<{
       :aria-label="destination.name"
       tabindex="-1"
     >
-      <img
-        :src="destination.image.src"
-        :alt="destination.image.alt"
-        :loading="eager ? 'eager' : 'lazy'"
-        class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+      <DestinationImage
+        :image="destination.image"
+        :eager="eager"
+        class="h-full w-full transition duration-500 group-hover:scale-105"
       />
       <span
         class="absolute left-4 top-4 rounded-full bg-cream/90 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-forest"

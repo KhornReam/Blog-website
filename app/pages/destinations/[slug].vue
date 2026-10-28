@@ -41,10 +41,10 @@ const relatedDestinations = computed(() => {
   <article v-if="destination">
     <!-- Cover -->
     <header class="relative">
-      <img
-        :src="destination.image.src"
-        :alt="destination.image.alt"
-        class="h-72 w-full object-cover sm:h-96 lg:h-[28rem]"
+      <DestinationImage
+        :image="destination.image"
+        eager
+        class="h-72 w-full sm:h-96 lg:h-[28rem]"
       />
       <div class="absolute inset-0 bg-gradient-to-t from-forest-deep/85 via-forest-deep/40 to-transparent" />
 
