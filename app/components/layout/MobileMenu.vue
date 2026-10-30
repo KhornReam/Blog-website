@@ -48,7 +48,7 @@ function submitSearch() {
   <!-- Rendered only on the client, as a full-screen overlay above the page. -->
   <div
     v-if="open"
-    class="fixed inset-0 z-50 flex flex-col bg-forest-deep text-cream lg:hidden"
+    class="fixed inset-0 z-50 flex flex-col bg-forest-deep pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] text-cream lg:hidden"
     role="dialog"
     aria-modal="true"
     aria-label="Site navigation"

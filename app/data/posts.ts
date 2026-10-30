@@ -19,7 +19,7 @@ export const posts: BlogPost[] = [
     author: 'Ream',
     featured: true,
     cover: {
-      src: '/images/posts/quiet-morning-mountains.svg',
+      src: '/images/posts/quiet-morning-mountains.png',
       alt: 'Illustration of misty mountain ridges at dawn with a pale sun',
     },
     sections: [
@@ -39,7 +39,7 @@ export const posts: BlogPost[] = [
           'This is the part of a mountain morning that photographs never quite hold: the temperature rising by the minute, the birds starting in layers, and the sudden realisation that you have been standing still for a long time.',
         ],
         image: {
-          src: '/images/details/mist-valley.svg',
+          src: '/images/details/mist-valley.png',
           alt: 'Illustration of a valley half filled with drifting morning mist',
           caption: 'Mist holding in the valley just after sunrise.',
         },
@@ -65,7 +65,7 @@ export const posts: BlogPost[] = [
     readingTime: 4,
     author: 'Ream',
     cover: {
-      src: '/images/posts/following-flowing-water.svg',
+      src: '/images/posts/following-flowing-water.png',
       alt: 'Illustration of a river winding through a green valley between forested hills',
     },
     sections: [
@@ -85,7 +85,7 @@ export const posts: BlogPost[] = [
           'Sample note: this section demonstrates how an in-article photograph sits between paragraphs, with a caption and alt text for accessibility.',
         ],
         image: {
-          src: '/images/details/waterfall.svg',
+          src: '/images/details/waterfall.png',
           alt: 'Illustration of a waterfall falling between dark rocks into a pool',
           caption: 'A small fall marks the point where the valley narrows.',
         },
@@ -111,7 +111,7 @@ export const posts: BlogPost[] = [
     readingTime: 6,
     author: 'Ream',
     cover: {
-      src: '/images/posts/beyond-the-city.svg',
+      src: '/images/posts/beyond-the-city.png',
       alt: 'Illustration of a rural road crossing open countryside with distant hills',
     },
     sections: [
@@ -131,7 +131,7 @@ export const posts: BlogPost[] = [
           'Travel loosens up here. Directions become landmarks, lunch becomes whatever the kitchen finished first, and the plan for tomorrow is decided at dinner.',
         ],
         image: {
-          src: '/images/details/country-road.svg',
+          src: '/images/details/country-road.png',
           alt: 'Illustration of an empty road curving between green fields',
           caption: 'The road out of town, with nothing urgent ahead.',
         },
@@ -157,7 +157,7 @@ export const posts: BlogPost[] = [
     readingTime: 5,
     author: 'Ream',
     cover: {
-      src: '/images/posts/weekend-road-trip.svg',
+      src: '/images/posts/weekend-road-trip.png',
       alt: 'Illustration of rolling green countryside with fields and a winding road',
     },
     sections: [
@@ -177,7 +177,7 @@ export const posts: BlogPost[] = [
           'Sample image used to show the article layout: photograph, caption and readable body text around it.',
         ],
         image: {
-          src: '/images/details/rice-fields.svg',
+          src: '/images/details/rice-felds.png',
           alt: 'Illustration of layered rice fields in different shades of green',
           caption: 'Fields at different stages of growth make a patchwork of greens.',
         },
@@ -203,7 +203,7 @@ export const posts: BlogPost[] = [
     readingTime: 5,
     author: 'Ream',
     cover: {
-      src: '/images/posts/ratanakiri-waterfalls.svg',
+      src: '/images/posts/ratanakiri-waterfalls.png',
       alt: 'Illustration of a tall waterfall in dense forest with a bright pool below',
     },
     sections: [
@@ -223,7 +223,7 @@ export const posts: BlogPost[] = [
           'Pools at the base are swimmable in the dry season, though the rocks are slippery and the current near the lip is stronger than it looks.',
         ],
         image: {
-          src: '/images/details/waterfall.svg',
+          src: '/images/details/waterfall.png',
           alt: 'Illustration of water falling in a wide sheet into a green pool',
           caption: 'The lower pool, calm only a few metres from the drop.',
         },
@@ -249,7 +249,7 @@ export const posts: BlogPost[] = [
     readingTime: 6,
     author: 'Ream',
     cover: {
-      src: '/images/posts/cardamom-camping.svg',
+      src: '/images/posts/cardamom-camping.png',
       alt: 'Illustration of a small tent beside a river under layered forest mountains',
     },
     sections: [
@@ -269,7 +269,7 @@ export const posts: BlogPost[] = [
           'Everything you carry has to earn its weight. Two nights out is long enough to learn which items you packed for comfort and never touched.',
         ],
         image: {
-          src: '/images/details/forest-camp.svg',
+          src: '/images/details/forest-camp.png',
           alt: 'Illustration of a tent and campfire in a forest clearing at dusk',
           caption: 'Camp set early, before the light drops under the canopy.',
         },
@@ -295,7 +295,7 @@ export const posts: BlogPost[] = [
     readingTime: 4,
     author: 'Ream',
     cover: {
-      src: '/images/posts/forest-canopy-trails.svg',
+      src: '/images/posts/forest-canopy-trails.png',
       alt: 'Illustration of a narrow trail through tall trees with light filtering down',
     },
     sections: [
@@ -315,7 +315,7 @@ export const posts: BlogPost[] = [
           'Going slowly also means going quietly, and a quiet walker simply sees more than a fast one.',
         ],
         image: {
-          src: '/images/details/forest-camp.svg',
+          src: '/images/details/forest-camp.png',
           alt: 'Illustration of trees at the edge of a clearing in warm afternoon light',
           caption: 'Where the forest opens, the sightings improve.',
         },
@@ -341,7 +341,7 @@ export const posts: BlogPost[] = [
     readingTime: 5,
     author: 'Ream',
     cover: {
-      src: '/images/posts/packing-light.svg',
+      src: '/images/posts/packing-light.png',
       alt: 'Illustration of a backpack resting on a rock overlooking green hills',
     },
     sections: [
@@ -361,7 +361,7 @@ export const posts: BlogPost[] = [
           'Shoes matter more than anything else on this list. Broken-in, dryable, with grip that still works on wet stone — that single choice decides how much you enjoy day three.',
         ],
         image: {
-          src: '/images/details/country-road.svg',
+          src: '/images/details/country-road.png',
           alt: 'Illustration of a path leading toward distant green hills',
           caption: 'Carry less, walk further, stop more often.',
         },
@@ -387,7 +387,7 @@ export const posts: BlogPost[] = [
     readingTime: 4,
     author: 'Ream',
     cover: {
-      src: '/images/posts/fish-amok.svg',
+      src: '/images/posts/fish-amok.png',
       alt: 'Illustration of a banana leaf parcel with curry and herbs in a shallow bowl',
     },
     sections: [
@@ -407,7 +407,7 @@ export const posts: BlogPost[] = [
           'Sample note: this article is demonstration content — it describes the dish generally rather than reviewing any particular restaurant.',
         ],
         image: {
-          src: '/images/details/market-stall.svg',
+          src: '/images/details/market.png',
           alt: 'Illustration of a market stall with bowls, herbs and produce on a wooden table',
           caption: 'Fresh herbs and pastes are bought the same morning they are used.',
         },
@@ -433,7 +433,7 @@ export const posts: BlogPost[] = [
     readingTime: 4,
     author: 'Ream',
     cover: {
-      src: '/images/posts/nom-banh-chok.svg',
+      src: '/images/posts/nom-banh-chok.png',
       alt: 'Illustration of a bowl of rice noodles with green curry and fresh herbs',
     },
     sections: [
@@ -453,7 +453,7 @@ export const posts: BlogPost[] = [
           'Each market versions differs slightly, and the fun of travelling is comparing them town by town.',
         ],
         image: {
-          src: '/images/details/market-stall.svg',
+          src: '/images/details/market.png',
           alt: 'Illustration of a morning market stall with baskets of noodles and greens',
           caption: 'Morning stalls sell nom banh chok until the curry runs out.',
         },
@@ -479,7 +479,7 @@ export const posts: BlogPost[] = [
     readingTime: 4,
     author: 'Ream',
     cover: {
-      src: '/images/posts/grilled-fish-river.svg',
+      src: '/images/posts/grilled-fish-river.png',
       alt: 'Illustration of a whole fish grilling over a small charcoal brazier',
     },
     sections: [
@@ -499,7 +499,7 @@ export const posts: BlogPost[] = [
           'Sample note: demonstration content describing the dish generally, not a restaurant review.',
         ],
         image: {
-          src: '/images/details/market-stall.svg',
+          src: '/images/details/market.png',
           alt: 'Illustration of small dishes of lime, chilli and dipping sauce on a table',
           caption: 'The same three condiments appear at almost every grill.',
         },
@@ -525,7 +525,7 @@ export const posts: BlogPost[] = [
     readingTime: 5,
     author: 'Ream',
     cover: {
-      src: '/images/posts/market-breakfast.svg',
+      src: '/images/posts/market-breakfast.png',
       alt: 'Illustration of a market aisle with stalls, baskets and hanging lights',
     },
     sections: [
@@ -545,7 +545,7 @@ export const posts: BlogPost[] = [
           'The reliable method is to pick the stall with the longest queue of people who are clearly not queueing for fun.',
         ],
         image: {
-          src: '/images/details/market-stall.svg',
+          src: '/images/details/market.png',
           alt: 'Illustration of baskets of fruit and vegetables arranged at a market stall',
           caption: 'Everything stacked before the day gets hot.',
         },
@@ -571,7 +571,7 @@ export const posts: BlogPost[] = [
     readingTime: 4,
     author: 'Ream',
     cover: {
-      src: '/images/posts/highland-snacks.svg',
+      src: '/images/posts/highland-snacks.png',
       alt: 'Illustration of dried fruit, rice parcels and corn arranged for sale',
     },
     sections: [
@@ -591,7 +591,7 @@ export const posts: BlogPost[] = [
           'Sample note: demonstration copy — no specific vendor is being reviewed here.',
         ],
         image: {
-          src: '/images/details/market-stall.svg',
+          src: '/images/details/market.png',
           alt: 'Illustration of wrapped snacks and dried fruit on a market table',
           caption: 'Leaf-wrapped snacks keep for hours without refrigeration.',
         },
@@ -617,7 +617,7 @@ export const posts: BlogPost[] = [
     readingTime: 3,
     author: 'Ream',
     cover: {
-      src: '/images/posts/iced-coffee.svg',
+      src: '/images/posts/iced-coffee.png',
       alt: 'Illustration of a tall glass of iced coffee on a table beside a window',
     },
     sections: [
@@ -637,7 +637,7 @@ export const posts: BlogPost[] = [
           'The glass is the point: large, sweating, and cold enough to slow you down for half an hour.',
         ],
         image: {
-          src: '/images/details/market-stall.svg',
+          src: '/images/details/market.png',
           alt: 'Illustration of glasses and a coffee pot on a café table',
           caption: 'A shaded table and one cold glass are the whole plan.',
         },

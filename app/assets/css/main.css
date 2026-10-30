@@ -42,3 +42,51 @@
     @apply bg-forest text-cream;
   }
 }
+
+@keyframes hero-image-drift {
+  from { transform: scale(1.02); }
+  to { transform: scale(1.09); }
+}
+
+@keyframes hero-content-enter {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-glow-float {
+  0%, 100% { transform: translate3d(0, 0, 0); opacity: 0.55; }
+  50% { transform: translate3d(-18px, 14px, 0); opacity: 0.85; }
+}
+
+@keyframes hero-arrow-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
+.home-hero__image {
+  animation: hero-image-drift 24s ease-in-out infinite alternate;
+}
+
+.home-hero__glow {
+  animation: hero-glow-float 10s ease-in-out infinite;
+}
+
+.home-hero__enter {
+  animation: hero-content-enter 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.home-hero__enter--one { animation-delay: 100ms; }
+.home-hero__enter--two { animation-delay: 200ms; }
+.home-hero__enter--three { animation-delay: 300ms; }
+.home-hero__enter--four { animation-delay: 400ms; }
+.home-hero__enter--card { animation-delay: 250ms; }
+.home-hero__arrow { animation: hero-arrow-bob 1.8s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero__image,
+  .home-hero__glow,
+  .home-hero__enter,
+  .home-hero__arrow {
+    animation: none !important;
+  }
+}

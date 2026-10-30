@@ -1,99 +1,75 @@
 <script setup lang="ts">
-import { Compass, ArrowUp } from '@lucide/vue'
+import { ArrowUp, Compass } from '@lucide/vue'
 import { navItems } from '~/data/navigation'
 import { blogCategories } from '~/data/categories'
 
 const currentYear = new Date().getFullYear()
-
-/**
- * Social links use placeholder URLs — replace them with your own profiles
- * (they are kept in one array so there is only one place to edit).
- */
-const socialLinks = [
-  { label: 'Instagram', url: 'https://www.instagram.com/' },
-  { label: 'YouTube', url: 'https://www.youtube.com/' },
-  { label: 'Facebook', url: 'https://www.facebook.com/' },
-]
 </script>
 
 <template>
   <footer class="bg-forest-deep text-cream">
-    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6">
-      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-        <!-- Brand -->
-        <div class="lg:col-span-2">
-          <p class="font-display text-2xl">Wander With Ream</p>
-          <p class="mt-2 max-w-sm text-sm leading-relaxed text-cream/70">
-            Find your way. Feel the journey. Taste the world.
+    <div class="mx-auto max-w-7xl px-4 pb-6 pt-10 sm:px-6 sm:pt-14 lg:px-8">
+      <NuxtLink to="/destinations" class="footer-feature group relative isolate flex min-h-64 items-end overflow-hidden rounded-3xl p-6 sm:min-h-72 sm:p-10 lg:min-h-80">
+        <img
+          src="/images/hero.png"
+          alt="Misty green highlands in Cambodia at sunrise"
+          class="absolute inset-0 -z-20 h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+          width="1000"
+          height="667"
+          loading="lazy"
+          decoding="async"
+        />
+        <span class="absolute inset-0 -z-10 bg-gradient-to-r from-forest-deep/90 via-forest-deep/45 to-transparent" aria-hidden="true" />
+        <span class="max-w-xl">
+          <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/75">
+            <Compass :size="15" aria-hidden="true" />
+            Your next escape starts here
+          </span>
+          <span class="mt-3 block font-display text-3xl leading-tight sm:text-4xl lg:text-5xl">Find a little more room to wander.</span>
+          <span class="mt-4 inline-flex items-center gap-2 rounded-full bg-cream px-5 py-3 text-sm font-semibold text-forest transition group-hover:bg-white">
+            Explore Cambodia
+            <ArrowUp :size="16" class="rotate-45" aria-hidden="true" />
+          </span>
+        </span>
+      </NuxtLink>
+
+      <div class="mt-12 grid gap-10 border-b border-cream/15 pb-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr] lg:gap-14">
+        <div>
+          <NuxtLink to="/" class="font-display text-2xl tracking-tight">Wander With Ream</NuxtLink>
+          <p class="mt-3 max-w-sm text-sm leading-7 text-cream/70">
+            A personal travel journal exploring Cambodia through quiet landscapes, local food, and the people we meet along the way.
           </p>
-          <NuxtLink
-            to="/destinations"
-            class="mt-5 inline-flex items-center gap-2 rounded-full border border-cream/30 px-4 py-2 text-sm transition hover:border-cream hover:bg-cream/10"
-          >
-            <Compass :size="16" />
-            Explore destinations
-          </NuxtLink>
         </div>
 
-        <!-- Quick links -->
-        <nav aria-label="Footer">
-          <h2 class="text-sm font-semibold uppercase tracking-wider text-cream/60">Quick links</h2>
-          <ul class="mt-4 space-y-2 text-sm">
+        <nav aria-label="Footer navigation">
+          <h2 class="text-xs font-semibold uppercase tracking-[0.16em] text-cream/50">Explore</h2>
+          <ul class="mt-4 grid grid-cols-2 gap-x-5 gap-y-3 text-sm sm:grid-cols-1">
             <li v-for="item in navItems" :key="item.to">
-              <NuxtLink :to="item.to" class="text-cream/85 transition hover:text-cream">
-                {{ item.label }}
-              </NuxtLink>
+              <NuxtLink :to="item.to" class="text-cream/80 transition hover:text-white">{{ item.label }}</NuxtLink>
             </li>
           </ul>
         </nav>
 
-        <!-- Categories + socials -->
-        <div class="space-y-8">
-          <nav aria-label="Travel categories">
-            <h2 class="text-sm font-semibold uppercase tracking-wider text-cream/60">
-              Travel categories
-            </h2>
-            <ul class="mt-4 space-y-2 text-sm">
-              <li v-for="category in blogCategories" :key="category.slug">
-                <NuxtLink
-                  :to="{ path: '/blog', query: { category: category.slug } }"
-                  class="text-cream/85 transition hover:text-cream"
-                >
-                  {{ category.label }}
-                </NuxtLink>
-              </li>
-            </ul>
-          </nav>
-
-          <nav aria-label="Social media">
-            <h2 class="text-sm font-semibold uppercase tracking-wider text-cream/60">Follow along</h2>
-            <ul class="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
-              <li v-for="social in socialLinks" :key="social.label">
-                <a
-                  :href="social.url"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-cream/85 underline-offset-4 transition hover:text-cream hover:underline"
-                >
-                  {{ social.label }}
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav aria-label="Travel categories">
+          <h2 class="text-xs font-semibold uppercase tracking-[0.16em] text-cream/50">Browse stories</h2>
+          <ul class="mt-4 grid grid-cols-2 gap-x-5 gap-y-3 text-sm sm:grid-cols-1">
+            <li v-for="category in blogCategories" :key="category.slug">
+              <NuxtLink
+                :to="{ path: '/blog', query: { category: category.slug } }"
+                class="text-cream/80 transition hover:text-white"
+              >
+                {{ category.label }}
+              </NuxtLink>
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <div
-        class="mt-12 flex flex-col items-start justify-between gap-4 border-t border-cream/15 pt-6 text-sm text-cream/60 sm:flex-row sm:items-center"
-      >
-        <p>© {{ currentYear }} Wander With Ream. All rights reserved.</p>
-        <p class="text-cream/50">Sample content created for demonstration purposes.</p>
-        <a
-          href="#top"
-          class="inline-flex items-center gap-2 text-cream/80 transition hover:text-cream"
-        >
-          <ArrowUp :size="16" />
+      <div class="flex flex-col gap-3 pt-5 text-xs text-cream/55 sm:flex-row sm:items-center sm:justify-between">
+        <p>© {{ currentYear }} Wander With Ream.</p>
+        <a href="#top" class="inline-flex min-h-11 items-center gap-2 text-cream/75 transition hover:text-white">
           Back to top
+          <ArrowUp :size="15" aria-hidden="true" />
         </a>
       </div>
     </div>

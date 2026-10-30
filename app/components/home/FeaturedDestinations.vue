@@ -6,7 +6,7 @@ const featuredDestinations = destinations.slice(0, 4)
 </script>
 
 <template>
-  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">
+  <section id="destinations" class="mx-auto max-w-7xl scroll-mt-24 px-4 py-16 sm:px-6 lg:py-24">
     <SectionHeading
       eyebrow="Destinations"
       title="Places Worth the Journey"

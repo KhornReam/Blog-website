@@ -6,7 +6,7 @@ useSeoMeta({
   ogTitle: 'Wander With Ream — Personal Travel Journal',
   ogDescription:
     'Exploring beautiful places, discovering local flavors, and collecting stories along the way.',
-  ogImage: '/images/hero.svg',
+  ogImage: '/images/hero.png',
 })
 </script>
 
